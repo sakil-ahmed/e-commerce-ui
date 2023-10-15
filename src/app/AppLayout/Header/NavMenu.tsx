@@ -5,33 +5,40 @@ export const NavMenu = () => {
   const menu = [
     {
       id: 1,
-      name: "",
-      path: "",
+      name: "Home",
+      path: "#",
     }, {
       id: 2,
-      name: "",
-      path: "",
+      name: "Shop",
+      path: "#",
     }, {
       id: 3,
-      name: "",
-      path: "",
+      name: "About",
+      path: "#",
     }, {
       id: 4,
-      name: "",
-      path: "",
+      name: "Blog",
+      path: "#",
     }, {
       id: 5,
-      name: "",
-      path: "",
+      name: "Contact",
+      path: "#",
     }, {
       id: 6,
-      name: "",
-      path: "",
+      name: "Pages",
+      path: "#",
     },
   ]
   return (
-    <HStack>
-      <HStack>
+    <HStack display={{base:'none' , lg:'flex'}}>
+      <HStack gap={'20px'}>
+        {menu.map(({name, path, id}, i) => {
+          return (<Link _hover={{textDecoration: 'none'}} href={path} key={id + name}>
+            <Text color={'textColor.50'}>
+              {name}
+            </Text>
+          </Link>)
+        })}
       </HStack>
     </HStack>
 

@@ -2,6 +2,7 @@ import {ComponentStyleConfig} from "@chakra-ui/react";
 
 export enum ButtonVariant {
   primary = 'primary',
+  unstyled = 'unstyled'
 }
 
 export const ButtonStyle = {
@@ -16,9 +17,17 @@ export const ButtonStyle = {
       fontWeight: '700',
       lineHeight: "22px",
       letterSpacing: "0.2px",
-      _hover:{
-        bg:'primary.600'
+      _hover: {
+        bg: 'primary.600'
       }
+    },
+    [ButtonVariant.unstyled]: {
+      bg: 'transparent',
+      p: "0",
+      border: "none",
+      outline: "none",
+      minW: 'fit-content',
+      h: "auto",
     }
   },
   defaultProps: {

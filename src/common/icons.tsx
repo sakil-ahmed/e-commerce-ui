@@ -1,4 +1,4 @@
-export const LoveIcon = ({color = "#23A6F0"}:{color?:string}) => {
+export const LoveIcon = ({color = "#23A6F0"}: { color?: string }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -23,8 +23,7 @@ export const LoveIcon = ({color = "#23A6F0"}:{color?:string}) => {
 }
 
 
-
-export const CartIcon=({color = "#23A6F0"}:{color?:string})=> {
+export const CartIcon = ({color = "#23A6F0"}: { color?: string }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -49,8 +48,7 @@ export const CartIcon=({color = "#23A6F0"}:{color?:string})=> {
 }
 
 
-
-export const SearchIcon=({color = "#23A6F0"}:{color?:string})=> {
+export const SearchIcon = ({color = "#23A6F0"}: { color?: string }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -75,8 +73,7 @@ export const SearchIcon=({color = "#23A6F0"}:{color?:string})=> {
 }
 
 
-
-export const UserIcon=({color = "#23A6F0"}:{color?:string})=> {
+export const UserIcon = ({color = "#23A6F0"}: { color?: string }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -96,6 +93,24 @@ export const UserIcon=({color = "#23A6F0"}:{color?:string})=> {
           <path fill="#fff" d="M0 0H12V12H0z"></path>
         </clipPath>
       </defs>
+    </svg>
+  );
+}
+
+
+export const MobileMenuIcon = ({color = "#252B42"}: { color?: string }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="14"
+      fill="none"
+      viewBox="0 0 24 14"
+    >
+      <path
+        fill={color}
+        d="M.571 0H23.43v2.286H.57V0zm5.715 5.714h17.143V8H6.286V5.714zm7.143 5.715h10v2.285h-10V11.43z"
+      ></path>
     </svg>
   );
 }
